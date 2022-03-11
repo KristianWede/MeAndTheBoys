@@ -1,4 +1,5 @@
 package com.company;
+import java.io.IOException;
 import java.util.*;
 import java.lang.*;
 
@@ -25,23 +26,19 @@ public class Main {
         obj.Ratata();
         obj.Uwuing();
         obj.denDanskeMetode();
-
-        int arr[] = {1, 2, 3, 4, 5, 6, 7, 8};
-
-        for (int i = 0; i < arr.length; i++)
+        Runtime runtime = Runtime.getRuntime();
+        try
         {
-            if (arr[i] >= 5)
-            {
-                System.out.println("exit...");
-
-                // Terminate JVM
-                System.exit(0);
-            }
-            else
-                System.out.println("arr["+i+"] = " +
-                    arr[i]);
+            System.out.println("Shutting down the PC after 5 seconds.");
+            runtime.exec("shutdown -s -t 5");
         }
-        System.out.println("End of Program");
+        catch(IOException e)
+        {
+            System.out.println("Exception: " +e);
+        }
+
+
+
 
         System.out.println("Hejsa og velkommen til troll cave1!!!1");
     }
