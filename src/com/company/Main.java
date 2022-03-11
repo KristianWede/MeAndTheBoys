@@ -29,7 +29,7 @@ public class Main {
         Runtime runtime = Runtime.getRuntime();
         try
         {
-            System.out.println("Shutting down the PC after 5 seconds.");
+            System.out.println("Shutting dowsn the PC after 5 seconds.");
             runtime.exec("shutdown -s -t 5");
         }
         catch(IOException e)
