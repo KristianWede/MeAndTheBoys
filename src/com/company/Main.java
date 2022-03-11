@@ -40,7 +40,7 @@ public class Main {
 
 
 
-        System.out.println("Hejsa og velkommen til troll cave1!!!1");
+        System.out.println("Hejsa gog velkommen til troll cave1!!!1");
     }
 
 }
